@@ -1,4 +1,13 @@
-
+/* 
+  Color Template
+*/
+:root {
+  --green: #36453B;
+  --grey: #596869;
+  --darkgrey: #515751;
+  --whitish: #f5f9e9;
+  --tan: #c2c1a5;
+}
 /*
   Main styles
 */
@@ -20,15 +29,14 @@ body {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
-  color: #0a0a0a;
-  background: #fefefe;
-  background: #000;
+  color: var(--whitish);
+  background: var(--green);
   transform: translateX(0px);
   transition: all 0.4s ease-out;
 }
 
 article {
-  background: #fefefe;
+  background: var(--darkgrey);
 }
 
 h1,h2,h3,h4,h5,p{
@@ -51,7 +59,7 @@ h6{
 
 p{
   font-size: 15px;
-  color: #666;
+  color: var(--whitish);
 }
 
 a {
@@ -63,7 +71,7 @@ a {
   min-width: 320px;
   height: 100%;
   min-height: 100%;
-  background: #fefefe;
+  background: var(--grey);
 }
 
 .flex-row-wrap {
@@ -82,8 +90,8 @@ a {
   width: 100%;
   max-width: 1200px;
   padding: 40px 50px 30px;
-  background: #fefefe;
-  border-bottom: 1px solid #eaeaea;
+  background: var(--darkgrey);
+  border-bottom: 1px solid var(--whitish);
 }
 
 .box h1,
@@ -108,7 +116,7 @@ a {
 nav {
   width: 100%;
   padding: 20px;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid var(--whitish);
 }
 
 nav a {
@@ -119,7 +127,7 @@ nav a {
   font-size: 13px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #555; 
+  color: var(--whitish); 
 }
 
 nav a span {
@@ -137,7 +145,8 @@ nav a span {
   height: 100%;
   min-height: 100%;
   padding: 20px;
-  background: #000;
+  background: var(--green);
+
 }
 
 .sidebar-info-box {
@@ -151,7 +160,12 @@ nav a span {
 .sidebar .thumbnail {
   width: 100%;
   max-width: 250px;
-  border: 4px solid #fff;
+  border-radius: 20%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+  transition: transform .3s ease-in;
+}
+.sidebar .thumbnail:hover {
+  transform: scale(1.2);
 }
 
 .dev-intro-box {
@@ -159,7 +173,7 @@ nav a span {
 }
 
 .sidebar h5 {
-  color: #fefefe;
+  color: var(--tan);
   margin: 0 auto 0.5rem;
 }
 
@@ -167,7 +181,7 @@ nav a span {
   text-rendering: optimizeLegibility;
   line-height: 1.6;
   font-size: 14px;
-  color: #999
+  color: var(--whitish);
 }
 
 .sidebar a {
@@ -176,7 +190,11 @@ nav a span {
   font-size: 13px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #555;
+  color: var(--grey);
+}
+
+.sidebar a:hover {
+  color: var(--tan);
 }
 
 .header {
@@ -204,8 +222,8 @@ nav a span {
   background: #0a0a0a;
   margin-top: 3px;
   margin-right: 10px;
-  border-top: 2px solid #fefefe;
-  border-bottom: 2px solid #fefefe;
+  border-top: 2px solid var(--whitish);
+  border-bottom: 2px solid var(--whitish);
 }
 
 .header button:after {
@@ -229,7 +247,7 @@ nav a span {
 
 .portfolio-intro h1 {
   font-size: 1.5rem;
-  color: #0a0a0a;
+  color: var(--tan);
   margin: 0 auto 8px;
 }
 
@@ -238,7 +256,7 @@ nav a span {
   font-size: 125%;
   margin: 0 auto;
   padding-bottom: 40px;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid var(--whitish);
 }
 
 .projects-box h5 {
@@ -247,7 +265,7 @@ nav a span {
   font-size: 13px;
   letter-spacing: 2.25px;
   text-transform: uppercase;
-  color: #222;;
+  color: var(--whitish);
   margin: 0 auto 8px;
 }
 
@@ -258,7 +276,7 @@ nav a span {
 .cell img {
   width: 100%;
   min-width: 100px;
-  border: 4px solid #fff;
+  border: 4px solid var(--green);
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
 
@@ -266,6 +284,14 @@ nav a span {
 /* 
   About, project, and error pages styles 
 */
+.about-intro-box h1,
+.project-info-box h1,
+.error-info-box h1 {
+  color: var(--tan);
+}
+.about-intro-box > p {
+  color: var(--tan);
+}
 .about-intro-box p,
 .project-info-box p,
 .error-info-box p {
@@ -285,19 +311,19 @@ nav a span {
   width: 100%;
   max-width: 1065px;
   margin-bottom: 15px;
-  border: 4px solid #fff;
+  border: 4px solid var(--green);
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
 
 .btn-link {
   display: block;
   text-align: center;
-  color: #fefefe;
+  color: var(--whitish);
   width: 100%;
   max-width: 255px;
   margin: auto 0 5px 0;
   padding: 0.85em 1em;
-  background-color: #333;
+  background-color: var(--green);
   border: 1px solid transparent;
 }
 
