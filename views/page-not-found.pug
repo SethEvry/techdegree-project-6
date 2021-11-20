@@ -1,3 +1,21 @@
 extends layout.pug
 
 block content
+
+    nav.nav
+        a(href='/')
+            span &larr;
+            |  Home
+
+    article
+
+        h1= `Error Code: 404 - Page Not Found`
+        if err 
+            h2= err.message
+        else 
+            h2= `Oops!  It looks like the page you're looking for does not exist.`
+
+    nav.nav
+        a(href='/')
+            span &larr;
+            |  Back

@@ -1,3 +1,17 @@
 extends layout.pug
 
 block content
+
+    nav.nav
+        a(href='/')
+            span &larr;
+            |  Back
+
+    article
+
+        h1= 'Error Code: ' + err.status + ' - ' + err.message
+
+    nav.nav
+        a(href='/')
+            span &larr;
+            |  Back
