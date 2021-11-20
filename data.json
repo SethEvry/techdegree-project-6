@@ -2,19 +2,21 @@
 	"projects": [
 		{
 			"id": "0",
-			"Project_name": "Random Quote Generator",
+			"project_name": "Random Quote Generator",
 			"description": "Generates a random quote from a given list.",
 			"technologies": ["HTML", "CSS", "JavaScript", "DOM Manipulation"],
 			"live_link": "https://sethevry.github.io/a-random-quote-generator",
 			"github_link": "https://github.com/SethEvry/a-random-quote-generator",
 			"image_urls": [
-				"/public/images/rsz_quote1.png",
-				"/public/images/quote2.png"
+				"static/images/rsz_quote1.png",
+				"static/images/quote2.png",
+				"static/images/quote3.png",
+				"static/images/quote4.png"
 			]
 		},
 		{
 			"id": "1",
-			"Project_name": "Data Pagination and Filtering",
+			"project_name": "Data Pagination and Filtering",
 			"description": "Paginates a group of data and filters through it with a search bar",
 			"technologies": [
 				"HTML",
@@ -26,13 +28,14 @@
 			"live_link": "https://sethevry.github.io/data-pagination-and-filtering",
 			"github_link": "https://github.com/SethEvry/data-pagination-and-filtering",
 			"image_urls": [
-				"/public/images/rsz_1pag1.png",
-				"/public/images/pag2.png"
+				"static/images/rsz_1pag1.png",
+				"static/images/pag2.png",
+				"static/images/pag3.png"
 			]
 		},
 		{
 			"id": "2",
-			"Project_name": "Interactive Form",
+			"project_name": "Interactive Form",
 			"description": "An interactive sign-up form.",
 			"technologies": [
 				"HTML",
@@ -45,13 +48,16 @@
 			"live_link": "https://sethevry.github.io/interactive-form",
 			"github_link": "https://github.com/SethEvry/interactive-form",
 			"image_urls": [
-				"/public/images/rsz_form1.png",
-				"/public/images/form2.png"
+				"static/images/rsz_form1.png",
+				"static/images/form2.png",
+				"static/images/form3.png",
+				"static/images/form4.png",
+				"static/images/form5.png"
 			]
 		},
 		{
 			"id": "3",
-			"Project_name": "Object Oriented Programming Word Game",
+			"project_name": "Object Oriented Programming Word Game",
 			"description": "A word game using Object Oriented Programming",
 			"technologies": [
 				"HTML",
@@ -63,13 +69,15 @@
 			"live_link": "https://sethevry.github.io/oop-game",
 			"github_link": "https://github.com/SethEvry/oop-game",
 			"image_urls": [
-				"/public/images/rsz_word1.png",
-				"/public/images/word2.png"
+				"static/images/rsz_word1.png",
+				"static/images/word2.png",
+				"static/images/word3.png",
+				"static/images/word4.png"
 			]
 		},
 		{
 			"id": "4",
-			"Project_name": "Public API Request",
+			"project_name": "Public API Request",
 			"description": "Retrieves a group of people from a public API and generates a list with Modals.",
 			"technologies": [
 				"HTML",
@@ -83,8 +91,10 @@
 			"live_link": "https://sethevry.github.io/public-api-request2",
 			"github_link": "https://github.com/SethEvry/public-api-request2",
 			"image_urls": [
-				"/public/images/rsz_api2.png",
-				"/public/images/api1.png"
+				"static/images/rsz_1api2.png",
+				"static/images/api1.png",
+				"static/images/api3.png",
+				"static/images/api4.png"
 			]
 		}
 	]
