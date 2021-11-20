@@ -7,13 +7,13 @@ block content
             span &larr;
             |  Home
 
-    article
+    article.error-info-box.inner-wrapper.flex-row-wrap
 
         h1= `Error Code: 404 - Page Not Found`
         if err 
-            h2= err.message
+            p= err.message
         else 
-            h2= `Oops!  It looks like the page you're looking for does not exist.`
+            p= `Oops!  It looks like the page you're looking for does not exist.`
 
     nav.nav
         a(href='/')

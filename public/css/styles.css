@@ -264,10 +264,11 @@ nav a span {
 
 
 /* 
-  About and project pages styles 
+  About, project, and error pages styles 
 */
 .about-intro-box p,
-.project-info-box p {
+.project-info-box p,
+.error-info-box p {
   font-size: 125%;
 }
 
