@@ -34,7 +34,7 @@ block content
       //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
       each image in project.image_urls.slice(1) 
 
-        img.project-img(src=`/${image}`, alt='')
+        img.project-img(src=`/${image}`, alt=`${project.project_name}`)
 
     nav.nav
       a(href='/')
