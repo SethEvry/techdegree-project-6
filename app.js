@@ -47,8 +47,10 @@ app.use((req, res, next) => {
 // General error handler
 app.use((err, req, res, next) => {
 	if (err.status === 404) {
+		console.log("404 error handler engaged");
 		res.status(404).render("page-not-found", { err });
 	} else {
+		console.log("General error handler engaged")
 		err.status = err.status ? err.status : 500;
 		err.message = err.message ? err.message : "Something went wrong!";
 		res.status(err.status);
